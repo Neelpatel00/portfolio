@@ -92,7 +92,7 @@ const AboutUs = () => {
           <div className="flip-card-inner">
             {/* Front side with image */}
             <div className="flip-card-front">
-              <img src="/assets/Images/n2.png" alt="Avatar" />
+              <img src="./assets/Images/n2.png" alt="Avatar" />
             </div>
             
             {/* Back side with content */}

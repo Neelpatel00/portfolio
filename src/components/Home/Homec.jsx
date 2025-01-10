@@ -88,7 +88,7 @@ const Homec = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.8, ease: "easeInOut" }}
       >
-        <img src="/assets/Images/n3.png" alt="avatar" />
+        <img src="./assets/Images/n3.png" alt="avatar" />
       </motion.div>
     </section>
   );
