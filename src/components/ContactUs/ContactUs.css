@@ -1,0 +1,145 @@
+.contact-us {
+    padding: 2rem;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .contact-title {
+    margin-bottom: 2rem;
+  }
+
+  .contact-title {
+    margin-bottom: 30px;
+    font-size: 3rem;
+    color: #FFF;
+    text-shadow: 5px 5px 5px rgba(255, 255, 255);
+  }
+  
+  .contact-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, #f72585, #4dabf7, #74c69d);
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+  
+  .contact-card {
+    background: #FFFFFF1A;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255);
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    position: relative;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #FFF;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #007bff;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  button {
+    padding: 1rem;
+    font-size: 1rem;
+    background: black;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact-card button:hover {
+    background: linear-gradient(90deg, #f72585, #4dabf7, #74c69d);
+  }
+  
+  .status {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #007bff;
+    text-align: center;
+  }
+
+  /* Modal styling */
+  .modal-pop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal-content-pop {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .modal-content-pop p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
+  
+  .modal-content-pop button {
+    padding: 0.7rem 1.5rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  
+  @keyframes scaleIn {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  

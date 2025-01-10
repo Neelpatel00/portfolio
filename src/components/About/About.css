@@ -1,0 +1,144 @@
+/* About Us Section Styling */
+.about-us {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #000;
+}
+
+/* Title Styling */
+.about-title h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #FFF;
+  text-shadow: 5px 5px 5px rgba(255, 255, 255);
+}
+
+.about-title h2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, #f72585, #4dabf7, #74c69d);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Flip Card Styles */
+.flip-card {
+  background-color: transparent;
+  width: 350px;
+  height: 450px;
+  perspective: 1000px;
+  margin: 0 auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  padding: 10px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.flip-card-front {
+  background: linear-gradient(90deg, #f72585, #4dabf7, #74c69d);
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.flip-card-back {
+  background: linear-gradient(90deg, #f72585, #4dabf7, #74c69d);
+  transform: rotateY(180deg);
+}
+
+/* Stats Section Styling */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.stat-box {
+  background-color: #FFFFFF1A;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  width: 20%;
+}
+
+.stat-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 255, 255);
+}
+
+.stat-box h4 {
+  font-size: 2rem;
+  margin: 0;
+  color: #FFF;
+}
+
+.stat-box p {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #999999;
+}
+
+.about-card {
+  background: transparent;
+  border: none;
+  text-align: left;
+}
+
+.p-content {
+  display: flex;
+  gap:20px;
+  align-items: center;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .flip-card {
+    width: 250px;
+    height: 350px;
+  }
+
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat-box {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .flip-card-front, .flip-card-back {
+    font-size: 0.9rem;
+  }
+}
