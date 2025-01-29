@@ -30,6 +30,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 300px;
 }
 
 .service-card:hover {
@@ -83,6 +84,7 @@ h2.big-2 {
     }
     .service-card {
         padding: 10px;
+        height: 200px;
     }
     .service-card h3 {
         font-size: 1rem;

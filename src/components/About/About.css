@@ -116,9 +116,13 @@
 }
 
 .p-content {
-  display: flex;
-  gap:20px;
+  display: grid;
+  grid-template-columns: 30px auto;
   align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  width: 100%;
 }
 
 /* Mobile Responsiveness */

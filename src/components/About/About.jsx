@@ -62,10 +62,10 @@ const AboutUs = () => {
   useEffect(() => {
     if (inView) {
       // Trigger the counting animation when the stats section comes into view
-      countUp(0, 4, setCountCompletedProjects, 1000);
-      countUp(0, 4, setCountHappyCustomers, 1000);
-      countUp(0, 3, setCountExperience, 1000);
-      countUp(0, 2, setCountCertifications, 1000);
+      countUp(0, 20, setCountCompletedProjects, 1500);
+      countUp(0, 15, setCountHappyCustomers, 1500);
+      countUp(0, 3, setCountExperience, 1500);
+      countUp(0, 15, setCountCertifications, 1500);
     }
   }, [inView]);
 
@@ -117,7 +117,7 @@ const AboutUs = () => {
       <Section initial={{ opacity: 0, y: 50 }} animation={{ opacity: 1, y: 0 }} >
       <div className="stats">
         <div className="stat-box">
-          <h4>{countCompletedProjects}</h4>
+          <h4>{countCompletedProjects}<span style={{color:"green"}}>*</span></h4>
           <p>Completed Projects</p>
         </div>
         <div className="stat-box">
@@ -130,7 +130,7 @@ const AboutUs = () => {
         </div>
         <div className="stat-box">
           <h4>{countCertifications}+</h4>
-          <p>Completed Certifications</p>
+          <p>Technology Used</p>
         </div>
       </div>
       </Section>
